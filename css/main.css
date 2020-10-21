@@ -1,0 +1,224 @@
+@font-face {
+font-family: "Helvetica"; 
+src: url("Helvetica.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+body{
+	font-family: "Helvetica";
+	
+}
+
+.container-fluid{
+	 	background-image:  linear-gradient(to top, rgba(255,255,255, 0.2) 0%, rgba(  0,  0,  0, 1) 100%), url("../images/background.jpg");
+  		background-repeat: no-repeat;
+  	 	background-size: cover;
+  	 	font-family: "Helvetica";
+}
+
+.books{
+	background: #fff;
+  margin: 0 auto;
+  box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+  -o-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+  -ms-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px;
+}
+.book_list{
+	padding-top: 40px;
+}
+.line{
+	width: 100%;
+	background-color: #fee802;
+	height: 3px;
+}
+.price{
+	font-weight: bold;
+}
+.imgShadows:hover{
+	box-shadow: 0px 0px 16px 5px rgba(0,0,0,0.75);
+	transition: 0.5s; 
+	transform: scale(1.04);
+}
+.basket:hover{
+		transform: scale(1.04);
+			cursor: pointer;
+	}	
+body {
+  margin: 0;
+  padding: 0;
+  
+}
+
+#contact {
+  width: 100%;
+  height: 100vh;
+  background-color: #E8E8E8;
+  overflow: hidden;
+  padding-bottom: 200px;
+}
+
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  font: 300 60px 'Helvetica', sans-serif;
+  letter-spacing: 6px;
+  color: #000;
+  margin-bottom: 25px;
+}
+.col-sm-12{
+	padding: 0;
+}
+.contact-wrapper {
+  margin: 0 auto;
+  padding-top: 20px;
+  position: relative;
+  max-width: 800px;
+}
+
+.form-horizontal {
+  float: left;
+  max-width: 400px;
+  font-family: 'Helvetica';
+  font-weight: 400;
+}
+
+.form-control, textarea {
+  max-width: 400px;
+  background-color: #111;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.send-button {
+  margin-top: 15px;
+  height: 34px;
+  width: 400px;
+  overflow: hidden;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.button {
+  width: 400px;
+  height: 34px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.send-text {
+  display: block;
+  margin-top: 10px;
+  font: 300 14px 'Helvetica', sans-serif;
+  letter-spacing: 2px;
+}
+
+.button:hover {
+  -webkit-transform: translate3d(0px, -29px, 0px);
+          transform: translate3d(0px, -29px, 0px);
+}
+
+.direct-contact-container {
+  max-width: 400px;
+  float: right;
+  margin-top: 5px;
+}
+
+.contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+}
+
+.list-item {
+  line-height: 4;
+    color: #000;
+}
+
+.contact-text {
+  font: 300 18px 'Helvetica', sans-serif;
+  letter-spacing: 1.9px;
+    color: #000;
+}
+
+.place {
+  margin-left: 62px;
+}
+
+.phone {
+  margin-left: 56px;
+}
+
+.gmail {
+  margin-left: 53px;
+}
+
+.contact-text a {
+    color: #000;
+  text-decoration: none;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 760px) {
+    #contact {
+        height: 1000px;
+    }
+  .section-header {
+    font-size: 65px;
+  }
+  .direct-contact-container, .form-horizontal {
+    float: none;
+    margin: 10px auto;
+  }  
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 300px;
+  }    
+}
+
+@media screen and (max-width: 569px) {
+  #contact {
+    height: 1200px;
+    }
+  .section-header{
+    font-size: 50px;
+  }
+  .direct-contact-container, .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }  
+  .form-control, textarea {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  
+  .name, .email, textarea {
+    width: 280px;
+  } 
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 280px;
+  }  
+  
+}
+
+@media screen and (max-width: 410px) {
+  .send-button {
+    width: 99%;
+  }
+}

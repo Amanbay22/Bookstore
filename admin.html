@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home page</title>
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+    <link crossorigin="anonymous"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            type="text/javascript"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" type="text/javascript"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" type="text/javascript"></script>
+
+</head>
+<body >
+<table class="table">
+
+
+    <div class="breadcrumb">
+        <div class="col">
+            <span>List of all Books</span>
+        </div>
+        <div class="col col-lg-2">
+            <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#example1Modal">
+                + ADD NEW
+            </button>
+        </div>
+    </div>
+    <thead>
+    <tr>
+        <th style="width: 480px">Book Name</th>
+        <th style="width: 620px">Boot Date</th>
+        <th >OPERATION</th>
+    </tr>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td>Harry Potter</td>
+            <td>1997</td>
+            <td>
+                <a class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Edit</a>
+                <a class="btn btn-secondary" >Details</a>
+
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+<div class="myForm">
+    <form action="#" method="post">
+        <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade"
+             id="exampleModal" role="dialog"
+             tabindex="-1">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Update or
+                            Create</h5>
+                        <button aria-label="Close" class="close" data-dismiss="modal"
+                                type="button">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <input class="form-control" id="id" name="id" type="hidden" value=""/>
+                        <div class="form-group">
+                            <label class="col-form-label" for="name">Name:</label>
+                            <input class="form-control" id="name" name="name" type="text" value=""/>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description:</label>
+                            <textarea class="form-control" id="description" name="description" > </textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="founded">Founded on:</label>
+                            <input class="form-control" id="founded" name="foundedYear" />
+                            <input class="form-control" type="hidden" id="city" name="city">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal"
+                                type="button">Close
+                        </button>
+                        <input class="btn btn-primary" type="submit" value="save"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="myForm">
+    <form action="#" method="post">
+        <div aria-hidden="true" aria-labelledby="example1ModalLabel" class="modal fade"
+             id="example1Modal" role="dialog"
+             tabindex="-1">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="example1ModalLabel">Add new</h5>
+                        <button aria-label="Close" class="close" data-dismiss="modal"
+                                type="button">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label class="col-form-label" for="name">Name:</label>
+                            <input class="form-control" id="name1" name="name" type="text" value=""/>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description:</label>
+                            <textarea class="form-control" id="description1" name="description" ></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="founded">Founded on:</label>
+                            <input class="form-control" id="founded1" name="foundedYear" />
+                            <input class="form-control" type="hidden" id="city1" name="city" th:value="${id}">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal"
+                                type="button">Close
+                        </button>
+                        <input class="btn btn-primary" type="submit" value="Add"/>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+</body>
+</html>
